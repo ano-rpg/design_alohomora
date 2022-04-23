@@ -74,11 +74,11 @@
 }
 
 ::-webkit-scrollbar-track{
-	background-color:#000
+	background-color:#ede4c3
 }
 
 ::-webkit-scrollbar-thumb{
-	BACKGROUND-COLOR:var(--accent-color,#999)
+	BACKGROUND-COLOR:#d4c1a0
 }
 
 /* GROUPES */
