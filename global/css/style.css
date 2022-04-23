@@ -1,3 +1,566 @@
+/**********************SUBJECT**************************/
+
+/*******************
+== FORUMS & LIST ===
+*******************/
+
+.topic_list_container {
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.topic_list_pagination {
+	
+}
+
+.topic_list_pagination:empty {
+	display: none;
+}
+
+.topic_row:not(.no_topic) {
+	display: grid;
+	grid-template-areas:
+		"img stats title last"
+		"img stats desc last"
+		"img stats author last";
+	grid-template-columns: 10px 90px 1fr auto;
+	height:60px;
+	position: relative;
+	margin-bottom: 10px;
+	background-color: var(--fow-bg);
+}
+
+.topic_left_section {
+	position: relative;
+	width: 95px;
+	z-index: 2;
+	margin-left: 10px;
+	flex-shrink: 0;
+}
+
+/* 
+OLD   : https://i.servimg.com/u/f23/20/37/66/52/old10.gif
+NEW   : https://i.servimg.com/u/f23/20/37/66/52/new10.gif
+LCKD  : https://i.servimg.com/u/f23/20/37/66/52/locked10.gif
+NEW_N : https://i.servimg.com/u/f23/20/37/66/52/new_n10.gif
+NOTE  : https://i.servimg.com/u/f23/20/37/66/52/note10.gif
+NEW_A : https://i.servimg.com/u/f23/20/37/66/52/new_a10.gif
+ANCE  : https://i.servimg.com/u/f23/20/37/66/52/ance10.gif
+*/
+
+img[src="https://i.servimg.com/u/f23/20/37/66/52/old10.gif"],
+.topic_image img[src="https://i.servimg.com/u/f23/20/37/66/52/old10.gif"] {
+	background-color: var(--accent-color);
+}
+
+img[src="https://i.servimg.com/u/f23/20/37/66/52/new10.gif"],
+.topic_image img[src="https://i.servimg.com/u/f23/20/37/66/52/new10.gif"] {
+	animation: pulse_bg 2s infinite;
+}
+
+img[src="https://i.servimg.com/u/f23/20/37/66/52/new_n10.gif"],
+.topic_image img[src="https://i.servimg.com/u/f23/20/37/66/52/new_n10.gif"] {
+	--pulse_bg-hue: var(--img-note-hue, 100);
+	animation: pulse_bg 2s infinite;
+}
+
+img[src="https://i.servimg.com/u/f23/20/37/66/52/note10.gif"],
+.topic_image img[src="https://i.servimg.com/u/f23/20/37/66/52/note10.gif"] {
+	background-color: hsl(var(--img-note-hue, 100), 50%, 30%);
+}
+
+img[src="https://i.servimg.com/u/f23/20/37/66/52/new_a10.gif"],
+.topic_image img[src="https://i.servimg.com/u/f23/20/37/66/52/new_a10.gif"] {
+	--pulse_bg-hue: var(--img-annonce-hue, 190);
+	animation: pulse_bg 2s infinite;
+}
+
+img[src="https://i.servimg.com/u/f23/20/37/66/52/ance10.gif"],
+.topic_image img[src="https://i.servimg.com/u/f23/20/37/66/52/ance10.gif"] {
+	background-color: hsl(var(--img-annonce-hue, 190), 50%, 30%);
+}
+
+img[src="https://i.servimg.com/u/f23/20/37/66/52/locked10.gif"],
+.topic_image img[src="https://i.servimg.com/u/f23/20/37/66/52/locked10.gif"] {
+	background-color: var(--img-locked-bg, #242424);
+}
+
+img[src="https://i.servimg.com/u/f23/20/37/66/52/old10.gif"],
+img[src="https://i.servimg.com/u/f23/20/37/66/52/new10.gif"],
+img[src="https://i.servimg.com/u/f23/20/37/66/52/new_n10.gif"],
+img[src="https://i.servimg.com/u/f23/20/37/66/52/note10.gif"],
+img[src="https://i.servimg.com/u/f23/20/37/66/52/new_a10.gif"],
+img[src="https://i.servimg.com/u/f23/20/37/66/52/ance10.gif"],
+img[src="https://i.servimg.com/u/f23/20/37/66/52/locked10.gif"] {
+	height:25px;
+	width:100%;
+	max-width: 25px;
+}
+
+.topic_image {
+	height: 100%;
+	width:10px;
+
+	grid-area: img;
+}
+
+.topic_image img {
+	width: 100%;
+	height: 100%;
+}
+
+.topic_stats_container {
+	grid-area: stats;
+}
+
+.topic_stats_container > span {
+	display: block;
+	margin: 10px auto auto 15px;
+	text-transform: lowercase;
+	font-variant: small-caps;
+}
+
+.topic_replies {
+	
+}
+
+.topic_views {
+	
+}
+
+.topic_right_section {
+	position: relative;
+	flex-grow: 1;
+	margin-left: 10px;
+	display: grid;
+	grid-template-areas:
+		"title last-post"
+		"desc last-post"
+		"author last-post";
+	grid-template-columns: 1fr 250px;
+	grid-template-rows: 1fr auto 1fr;
+}
+
+.topic_title {
+	grid-area: title;
+}
+
+.topic_participated:not(:empty) {margin-right:5px}
+
+.topic_type {
+	
+}
+
+.topic_link {
+	font-variant: petite-caps;
+	font-weight: bold;
+	font-size: 11.5px;
+}
+
+.topic_title, .topic_author, .topic_description {
+	align-self: center;
+}
+
+
+.topic_description {
+	grid-area: desc;
+	font-style:italic;
+	color: #696767;
+
+	grid-area: desc;
+}
+
+.topic_author {
+	grid-area: author;
+	font-size:10px;
+	padding-bottom: 2px;
+	grid-area: author;
+}
+
+.topic_last_post {
+	padding-right: 70px;
+	text-align: right;
+	grid-area: last-post;
+	align-self: center;
+
+	grid-area: last;
+}
+
+.topic_last_post_time {
+	display: block;
+}
+
+.topic_last_post_author {
+	
+}
+
+.topic_last_post_link {margin-left: 5px;}
+
+.topic_last_post_avatar {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	box-shadow: 1px 1px 2px #333333;
+	grid-area: avatar;
+}
+
+.topic_last_post_avatar img {
+	width: 100%;
+}
+
+.no_topic {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/***********************PA*******************************/
+
+.pa_alo {
+    display: grid;
+    grid-template-columns: 1.1fr 0.7fr 1fr;
+    grid-template-rows: 70px 205px 150px;
+    gap: 0 0;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "pa_bienvenue pa_bienvenue pa_bienvenue"
+        "pa_contexte pa_contexte pa_partenaires"
+        "pa_staff pa_credits pa_topsite";
+}
+
+.pa_bienvenue {
+    grid-area: pa_bienvenue;
+    font-family: 'Ms Madi',cursive;
+    font-size: 42px;
+    text-align: center;
+    font-weight:700;
+    color:black;
+}
+
+.pa_contexte { grid-area: pa_contexte;
+background-image:url(https://media.discordapp.net/attachments/549523156633649163/967471831449755668/unknown.png);
+  height: 205px;
+}
+
+.pa_contexte h2{
+    font-family: 'Ms Madi',cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    background-color: #ede4c3;
+}
+
+.contexteensavoirplus{
+    opacity:0;
+    transition: .75s;
+}
+
+.contexte{
+    text-align: justify;
+    padding: 10px;
+    background-color: var(--title-2-bg);
+    color: black;
+    font-size: 12px;
+}
+
+.contexteensavoirplus:hover{
+    opacity:1
+}
+
+.ensavoirplus{
+      text-align: right;
+    padding: 0 10px 10px 0;
+    background-color: var(--title-2-bg);
+    color: black;
+    font-size: 12px;
+}
+
+.pa_staff { grid-area: pa_staff; }
+
+.pa_staff h2{
+      font-family: 'Ms Madi',cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0 10px;
+}
+
+.staff{
+    background-size: contain;
+    width: 85px;
+    height: 85px;
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.infostaff{
+    opacity:0;
+    background-color:var(--title-2-bg);
+    height: 75px;
+    width:75px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 2;
+    transition:.75s
+}
+
+.infostaff:hover{
+    opacity:1
+    transition:.75s
+}
+
+.infostaff2{
+    height: 60px;
+    padding: 5px;
+    width: 110px;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.dispo::before{
+color:green;
+  content:"Disponible"
+}
+
+.indispo::before{
+color:red;
+  content:"Indisponible";
+}
+
+.pa_topsite { grid-area: pa_topsite; }
+
+.pa_topsite h2{
+      font-family: 'Ms Madi',cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.pa_partenaires {
+    height: 205px;
+    grid-area: pa_partenaires;
+    margin-top: -4px;
+}
+
+.pa_partenaires h2{
+    font-family: 'Ms Madi',cursive;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.pa_partenaires img{
+      margin-top: 5px;
+}
+
+.pa_credits{
+    grid-area: pa_credits;
+}
+
+.credits{
+    margin: 10px;
+    text-align: justify;
+  color:black;
+}
+
+/***********************AFFICHAGE*****************************/
+
+.affichage {
+    display: grid;
+    grid-template-columns: 140px 252px 300px 280px;
+    grid-template-rows: 115px 1fr;
+    gap: 0 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "liens chrono coupe4maisons predef"
+        "liens chrono annonces date";
+    padding: 5px;
+    margin: -90px 1px 5px;
+    background-color: #ede4c3;
+}
+
+.liens { 
+    grid-area: liens;
+    text-align: center;
+    font-size: 11px;
+    width: 150px;
+    align-self: center;
+}
+
+.liens a {
+    background-color: var(--title-2-bg);
+    padding: 5px;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 130px;
+    border-radius: 5px;
+    text-align: center;
+    transition:.75s;
+}
+
+.liens a:hover {
+    background-color: #d4c1a0;
+    transition:.75s;
+    text-decoration:none!important
+}
+
+.coupe4maisons { grid-area: coupe4maisons;
+}
+
+.coupe4maisons div{
+    display: inline-flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.coupe4maisons img{
+width:300px;
+}
+
+.results{
+  width:300px;
+}
+
+.chrono {
+    grid-area: chrono;
+}
+
+.chrono h2{
+    font-family: 'Ms Madi',cursive;
+    font-size: 42px;
+    margin: -9px 0px;
+    text-align: center;
+}
+
+.chrono_full {
+    background-color: var(--title-2-bg);
+    overflow: auto;
+    padding: 5px;
+    font-size: 12px;
+    height: 241px;
+}
+
+.chrono span {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--title-2-txt);
+    border-bottom: 1px solid rgb(237,228,195,0.7);
+    margin-top: 10px;
+}
+
+.date {
+    grid-area: date;
+    text-align: center;
+    margin: 10px 0 -15px 0;
+}
+
+.date span{
+font-weight:bold;
+}
+
+.nousommesle{
+    margin-top: 10px;
+    margin-bottom: -20px;
+    background-color: var(--title-2-bg);
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.annonces {
+    grid-area: annonces;
+}
+
+.annonces h2{
+    font-family: 'Ms Madi',cursive;
+    font-size: 42px;
+    margin: 0 0 -26px 0;
+    text-align: center;
+}
+
+.annonce_full{
+    background-color: var(--title-2-bg);
+    padding: 5px;
+    font-size: 12px;
+    height: 115px;
+    margin-right: -5px;
+    overflow:auto
+}
+
+.annonces span {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--title-2-txt);
+    border-bottom: 1px solid rgb(237,228,195,0.7);
+    margin-top: 10px;
+}
+
+.predef{
+   grid-area: predef;
+}
+
+.predef h2{
+    font-family: 'Ms Madi',cursive;
+    font-size: 42px;
+    margin: -9px 0;
+    text-align: center;
+}
+
+.alo_pa_slider {
+	position: relative;
+	min-height: 60px;
+	z-index: 2;
+}
+
+.alo_pa_slider > div {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	z-index: -1;
+}
+
+.alo_pa_slider .slider_prev,
+.alo_pa_slider .slider_next {
+    display: block;
+    padding: 5px;
+    border: 1px solid lightgray;
+    position: absolute;
+    border-radius: 50%;
+    line-height: 100%;
+    top: 30px;
+    cursor: pointer;
+    user-select: none;
+    background: #d4c1a0;
+    border-color: var(--title-2-bg);
+}
+
+.alo_pa_slider .slider_prev {
+	left: 10px;
+}
+
+.alo_pa_slider .slider_next {
+	right: 10px;
+}
+
+.alo_pa_predef {
+}
+
+.alo_pa_predef .ano_pa_slider {
+	height: 150px;
+}
+
+.alo_pa_predef .slider_prev,
+.alo_pa_predef .slider_next {
+	top: 65px;
+}
+
 /*******************
 ====== GLOBAL=======
 *******************/
