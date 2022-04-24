@@ -1368,8 +1368,7 @@ body #i_logo {
 .Liensub {
     grid-area: Liensub;
     margin-top: 10px;
-    font-family: 'Roboto condensed';
-    font-size: 12px;
+    font-size: 11px;
     color: #000!important;
     text-decoration: none!important;
     text-transform: lowercase;
@@ -1379,7 +1378,7 @@ body #i_logo {
 
 .Liensub a {
     text-transform: uppercase;
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .descforum {
