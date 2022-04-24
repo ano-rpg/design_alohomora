@@ -1555,13 +1555,21 @@ font-size:18px;
     grid-template-areas: "avatarlastmember bienvenuea birthday";
 }
 
-.avatarlastmember { grid-area: avatarlastmember; text-align:center;}
+.avatarlastmember {
+    grid-area: avatarlastmember;
+    width: 80px;
+    text-align: center;
+    overflow: hidden;
+    max-height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;}
 
 .avatarlastmember img{
-width:50px
+    max-width: 100%!important;
 }
 
-.bienvenuea { grid-area: bienvenuea; align-self: center;}
+.bienvenuea { grid-area: bienvenuea; align-self: center; padding-left:10px;}
 
 .birthday {
     grid-area: birthday;
