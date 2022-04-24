@@ -696,7 +696,7 @@ table tr td{
 }
 
 .cattitle {
-	color: var(--accent-color);
+	color: var(--fow-txt);
 }
 
 td.cat, td.catBottom, td.catHead, td.catLeft, td.catRight, td.catSides,
