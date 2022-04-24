@@ -823,10 +823,11 @@ body > a[href="/"]{
 }
 
 #nav_menu > a {
-	display: block;
-	margin-bottom: 5px;
-	text-transform: uppercase;
-	color: var(--accent-color);
+    display: block;
+    margin-top: 6px;
+    font-variant: petite-caps;
+    font-size: 15px;
+    color: var(--accent-color);
 }
 
 #nav_menu a img {
