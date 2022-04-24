@@ -1471,11 +1471,13 @@ height: 100px;
     color: var(--fow-txt)!important;
     text-transform: uppercase;
     font-size: 11px;
+	overflow: auto;
 }
 
 .wasconnected { grid-area: wasconnected; background-color: #ede4c3;
     padding: 5px;
-    height: 170px;}
+    height: 170px;
+overflow: auto;}
 
 .wasconnected div {
 margin:auto; margin-top:25px;
