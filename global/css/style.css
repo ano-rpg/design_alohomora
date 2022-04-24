@@ -447,7 +447,7 @@ width:300px;
     font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--title-2-txt);
+    color: var(--fow-bg);
     border-bottom: 1px solid rgb(237,228,195,0.7);
     margin-top: 10px;
 }
