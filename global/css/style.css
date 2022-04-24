@@ -1349,6 +1349,10 @@ body #i_logo {
     font-size: 30px;
 }
 
+.Forumname a:hover{
+    text-decoration:none!important;
+}
+
 .imgrep { grid-area: imgrep;    width: 150px;
     height: 86px;
     padding-top: 5px;
