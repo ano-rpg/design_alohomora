@@ -641,7 +641,7 @@ font-weight:bold;
 }
 
 ::-webkit-scrollbar-thumb{
-	BACKGROUND-COLOR:#d4c1a0
+	BACKGROUND-COLOR:var(--title-2-bg)
 }
 
 /* GROUPES */
