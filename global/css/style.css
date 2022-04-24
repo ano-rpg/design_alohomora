@@ -306,7 +306,7 @@ background-image:url(https://media.discordapp.net/attachments/549523156633649163
 }
 
 .infostaff:hover{
-    opacity:1
+    opacity:1;
     transition:.75s
 }
 
