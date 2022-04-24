@@ -1353,6 +1353,11 @@ body #i_logo {
 .Forumname a:hover{
     text-decoration:none!important;
 	color:var(--fow-bg);
+	transition:.75s;
+}
+
+.Forumname a{
+	transition:.75s;
 }
 
 .imgrep { grid-area: imgrep;    width: 150px;
