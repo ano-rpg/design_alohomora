@@ -724,6 +724,13 @@ input, select, textarea {
 	border: none;
 }
 
+input, select, textarea #theme_picker {
+    background-color: var(--title-2-bg)!important;
+    color: var(--fow-txt)!important;
+    border: 1px solid white;
+    font-size: 15px;
+}
+
 .forumline {
 	background:none!important;
 	border:none;
@@ -857,7 +864,9 @@ body > a[href="/"]{
 }
 
 label[for="accent_picker"] {
-	display: block;
+    display: block;
+    font-size: 15px;
+    font-variant: petite-caps;
 }
 
 /* TOOLBAR */
