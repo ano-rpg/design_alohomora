@@ -724,7 +724,7 @@ input, select, textarea {
 	border: none;
 }
 
-input, select, textarea #theme_picker {
+#theme_picker input, select  {
     background-color: var(--title-2-bg)!important;
     color: var(--fow-txt)!important;
     border: 1px solid white;
