@@ -1561,15 +1561,21 @@ font-size:18px;
     text-align: center;
     overflow: hidden;
     max-height: 70px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-right: 10px;
-    border: 15px solid #ede4c3;}
+    border: 15px solid #ede4c3;
+}
 
 .avatarlastmember img{
     max-width: 100%!important;
 }
 
-.bienvenuea { grid-area: bienvenuea; align-self: center; padding-left:25px;}
+.bienvenuea {
+    grid-area: bienvenuea;
+    align-self: center;
+    padding-left: 20px;
+    text-align: center;
+}
 
 .birthday {
     grid-area: birthday;
