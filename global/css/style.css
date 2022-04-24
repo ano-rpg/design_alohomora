@@ -1347,6 +1347,7 @@ body #i_logo {
     padding-left: 5px;
     background-color: var(--title-2-bg);
     font-size: 30px;
+    transition:.75s;
 }
 
 .Forumname a:hover{
