@@ -866,6 +866,12 @@ body > a[href="/"]{
 	font-family: 'Ms Madi', cursive;
 }
 
+#nav_namelink a:hover{
+    text-decoration:none!important;
+    color: var(--fow-link-alt);
+    transition: .75s;
+}
+
 label[for="accent_picker"] {
     display: block;
     font-size: 15px;
