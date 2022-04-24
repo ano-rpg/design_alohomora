@@ -701,7 +701,7 @@ table tr td{
 
 td.cat, td.catBottom, td.catHead, td.catLeft, td.catRight, td.catSides,
 th, .thLeft, .thRight {
-	background-color: var(--title-2-bg, inherit)!important;
+	background-color: var(--accent-color, inherit)!important;
 	color: var(--title-2-txt)!important;
 }
 
