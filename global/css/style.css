@@ -1351,6 +1351,7 @@ body #i_logo {
 
 .Forumname a:hover{
     text-decoration:none!important;
+	color:var(--fow-bg);
 }
 
 .imgrep { grid-area: imgrep;    width: 150px;
