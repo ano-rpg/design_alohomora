@@ -773,6 +773,8 @@ body > a[href="/"]{
     font-size: 15px;
     margin-left: 30px;
     font-variant: petite-caps;
+    transition: .75s;
+    color: var(--accent-color);
 }
 
 #nav_bar a.mainmenu img {
@@ -780,6 +782,12 @@ body > a[href="/"]{
 	height: 32px;
 	transition:all .5s ease;
 	filter: drop-shadow(0 0 1px black);
+}
+
+#nav_bar a.mainmenu:hover{
+    text-decoration: none!important;
+    color: #ede4c3!important;
+    transition: .75s;
 }
 
 #nav_bar a.mainmenu img:hover {
