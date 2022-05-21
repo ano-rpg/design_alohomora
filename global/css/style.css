@@ -358,6 +358,12 @@ color:red;
     grid-area: pa_credits;
 }
 
+.pa_credits h2{
+      font-family: 'Ms Madi',cursive;
+    font-size: 30px;
+    text-align: center;
+  margin: 10px 0 10px;}
+
 .credits{
     margin: 10px;
     text-align: justify;
@@ -779,7 +785,6 @@ body > a[href="/"]{
 
 #nav_bar a.mainmenu img {
 	width: auto;
-	height: 32px;
 	transition:all .5s ease;
 	filter: drop-shadow(0 0 1px black);
 }
@@ -1375,13 +1380,14 @@ body #i_logo {
 
 .Liensub {
     grid-area: Liensub;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 11px;
     color: #000!important;
     text-decoration: none!important;
     text-transform: lowercase;
     font-style: italic;
     line-height: 1.5;
+    padding: 0 10px;
 }
 
 .Liensub a {
@@ -1428,7 +1434,8 @@ body #i_logo {
     height: 100px;
     width: 50px;
     background-color: #fff;
-  align-self: center;
+    align-self: center;
+    border: 1px solid #fff4ca;
 }
 
 .submess { 
@@ -1490,22 +1497,24 @@ height: 100px;
 .wasconnected { grid-area: wasconnected; background-color: #ede4c3;
     padding: 5px;
     height: 170px;
-overflow: auto;}
+    overflow: auto;
+    text-align:justify
+}
 
 .wasconnected div {
-margin:auto; margin-top:25px;
-width:350px; height:140px; padding:5px; overflow:auto;
-background:white; box-shadow:0 0 3px rgba(0,0,0,0.1); /* MODIFIABLE */
-font-size:10px; text-align:justify;
+    margin:auto; margin-top:25px;
+    width:350px; height:140px; padding:5px; overflow:auto;
+    background:white; box-shadow:0 0 3px rgba(0,0,0,0.1); /* MODIFIABLE */
+    font-size:10px; text-align:justify;
 }
 .wasconnected .row1 {
     background: none!important; padding:0; margin:0;
 }
 .wasconnected .row1 .gensmall {
-color: var(--fow-txt)!important;
-  background:none;
-      text-transform: uppercase;
-  font-size: 11px;/* MODIFIABLE */
+    color: var(--fow-txt)!important;
+    background:none;
+    text-transform: uppercase;
+    font-size: 11px;/* MODIFIABLE */
 }
 
 .groups { grid-area: groups; text-align: center;}
@@ -1601,4 +1610,299 @@ font-size:18px;
 color:black;
   background:none!important;
   font-size: 11px
+}
+
+/*Fait disparaître la colonne des widgets*/
+#left {
+  display: none;
+}
+/*Personnaliser le contenu des derniers sujets*/
+#derniers_sujets {
+    width: 230px;
+    max-height: 86px;
+    overflow: auto;
+}
+
+
+/* SCEDITOR */
+
+.sceditor-container, .sceditor-toolbar, .sceditor-container textarea {
+	background: none!important;
+	border-color: var(--sceditor-border,#0e0e0e)!important;
+	color: var(--sceditor-txt, lightgrey)!important;
+}
+
+.sceditor-toolbar {
+	text-align: center;
+}
+
+.sceditor-group {
+	background: var(--fow-bg)!important;
+	border: 1px solid black!important;
+}
+
+.sceditor-button:hover,
+.sceditor-button.hover,
+.sceditor-button.active{
+	/* TODO */
+	background: var(--accent-color)!important;
+}
+
+/* SCEDITOR - SMILIES */
+
+#sceditor_smilies {
+	background-color: var(--fow-bg);
+}
+
+#sceditor_smilies table {
+	background-color: var(--title-2-bg);
+}
+
+#sceditor_smilies #smilies_header {
+	height: 15px;
+	background-color: var(--title-2-bg);
+}
+
+/* BBCODE PERSONNALISE DANS SCEDITOR */
+
+.sceditor-button-usercode div,
+.sceditor-button-paroles div {
+	background: url('https://i.servimg.com/u/f44/20/29/00/76/star10.png')!important;
+	background-size: 16px 16px!important;
+}
+
+.sceditor-button-habillage div {
+	background: url('https://i.ibb.co/XX3SrN1/fav-habillage.png')!important;
+	background-size: 16px 16px!important;
+}
+
+
+
+/*******************
+====== PROFIL ======
+*******************/
+
+.profile_row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profile_top {
+	flex-basis: 100%;
+	background-color: var(--accent-color);
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.profile_title {
+	font-size: 0;
+	text-shadow: 0px 0px 3px black;
+}
+
+.profile_title span {
+	font-size: 16px;
+	font-variant: small-caps;
+	text-transform: capitalize;
+}
+
+.profile_contact {
+	flex-grow: 1;
+	text-align: right;
+	text-shadow: 0px 0px 3px black;
+}
+
+.profile_contact a {
+	text-transform: capitalize;
+	font-variant: small-caps;
+	display: inline-block;
+	margin-left: 10px;
+	color: lightgrey!important;
+	font-weight: bold;
+}
+
+.profile_contact > div[id^="field_id"] {
+	display:inline-block;
+	margin-left:10px;
+}
+
+.profile_left {
+	padding: 10px;
+	background: var(--fow-bg);
+	width: 200px;
+}
+
+.profile_avatar {
+	 margin-bottom: 10px;
+}
+
+.profile_rank {
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.profile_online {
+	line-height: 2;
+	text-align: center;
+}
+
+.profile_friend {
+	
+}
+
+.profile_contact_left{text-align:center}
+
+.profile_contact_left > div {
+	display: inline-block;
+	font-size: 0;
+}
+
+.profile_contact_left > div > * {
+	margin: 2px 5px;
+}
+
+.profile_admin {
+	line-height: 3;
+	text-align: center;
+}
+
+.profile_right {
+	flex-grow: 1;
+	margin-left: 10px;
+	background: var(--fow-bg);
+	padding: 10px;
+	line-height: 2.8;
+}
+
+.profile_right .profile_right_row {
+	display: grid;
+	grid-template-columns: 150px auto;
+}
+
+.profile_right .profile_label {
+	text-align: right;
+	font-weight: bold;
+	color: var(--accent-color);
+}
+
+.profile_right .profile_data {
+	margin-left: 5px;
+}
+
+.profile_bottom {
+	flex-basis: 100%;
+	margin-top: 10px;
+}
+
+.profile_achieve, .profile_inventory {
+	text-align: center;
+	background-color: var(--fow-bg);
+	padding:10px
+}
+
+.profile_inventory{margin-top:10px}
+
+.profile_achieve .profile_label,
+.profile_inventory .profile_label{
+	display: none;
+}
+
+.profile_bottom_subtitle {
+	color: var(--accent-color);
+	font-variant: petite-caps;
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.profile_adm_comment {
+	
+}
+
+.profile_rpg {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profile_rpg_adm {
+	flex-basis: 100%;
+	text-align: center;
+}
+
+.profile_rpg_adm table {
+	margin: 0 auto;
+}
+
+.profile_rpg_adm table tr td {
+	background: none;
+	border: none;
+}
+
+.profile_rpg_image {
+	
+}
+
+.profile_rpg_fields_left {
+	
+}
+
+.profile_rpg_fields {
+	
+}
+
+/* BADGES & PERSONNALISATIONS DE CHAMPS */
+
+.badge_ano {
+	width:50px;
+	height:50px;
+	margin-right: 10px;
+}
+
+.inventaire_ano {
+	width:50px;
+	height:50px;
+	margin-right: 10px;
+}
+
+/* Masque champ de contact - email */
+
+a[href^="/profile?mode=email&u="] {
+    display: none;
+}
+
+/* "Achats - line height normal */
+#field_id11 {
+	line-height: 1.2em;
+}
+
+#field_id11 .field_uneditable {
+	max-height: 100px;
+	overflow: auto;
+}
+
+.ajax-profil_edit {
+	left: -10px;
+}
+
+/********************************PREDEFINIS******************************/
+.predef_cadre{text-align:justify;width:600px;background-color: var(--title-2-bg);margin:auto;border:1px solid #fff6d3;padding:5px}
+.predef_title{color:var(--accent-color);font-family: 'Ms Madi',cursive;text-align: center;font-size: 42px;padding: 25px 0;}
+.predef_top {display: flex;} .predef_top div:nth-of-type(2) {padding-left: 2px;width: 67%;}
+.predef_cadre h1 {background-image: linear-gradient(45deg,var(--accent-color),hsl(264 50% 30% / 0));text-align: center;font-size: 15px;padding: 2px;font-variant: small-caps;margin-top: 0px;}
+.predef_top span {background: var(--accent-color);color: #fff;margin: 8.7px;display: inline-block;vertical-align: top;width: 82px;padding: 2px 0;overflow: hidden;font-size: 9px;font-family: Arial;text-align: center;line-height: 12px;}
+.predef_mid {display: flex;} .predef_mid div:nth-of-type(1) {width: 50%!important} .predef_mid div:nth-of-type(2) {margin-left: 4px;width: 60%;}
+.predef_credit{font-style: italic;text-align: right;font-size: 9px;margin-top: -20px;} .Pr_relations img {float: left;margin-right: 10px;}
+.predef_sscat{text-align: justify;width: 96%;background-color: #ede4c3a8;margin: auto;padding: 5px;}
+
+/* FLECHES HAUT-BAS */
+.boutonhautbas {
+	bottom: 40px;
+	right: 10px;
+	position: fixed;
+	z-index: 100;
+}
+.boutonhautbas img{
+	width:30px
 }
