@@ -597,7 +597,7 @@ font-weight:bold;
 	--g-serdaigle: #2F64EB;
 	--g-serpentard: #00C42E;
 	--g-poufsouffle: #CCCC00;
-	--g-professeurs: #0CE6D4;
+	--g-professeurs: #00b6a7;
 	--g-sorciers: #F0A000;
 }
 
@@ -649,20 +649,6 @@ font-weight:bold;
 ::-webkit-scrollbar-thumb{
 	BACKGROUND-COLOR:var(--accent-color)
 }
-
-/* GROUPES */
-
-[style*="#B785E6" i] {color: var(--g-pnj)!important;}
-[style*="#0093AD" i] {color: var(--g-l-ordre)!important;}
-[style*="#FF2929" i] {color: var(--g-sanguinaire)!important;}
-[style*="#D68585" i] {color: var(--g-sang-blanc)!important;}
-[style*="#DED788" i] {color: var(--g-damballa)!important;}
-[style*="#58A878" i] {color: var(--g-pawnees)!important;}
-[style*="#02733D" i] {color: var(--g-enrages)!important;}
-[style*="#811B1B" i] {color: var(--g-confrerie)!important;}
-[style*="#F5914F" i] {color: var(--g-resistance)!important;}
-[style*="#807248" i] {color: var(--g-neutres)!important;}
-[style*="#F000BC" i] {color: var(--g-sororite)!important;}
 
 /* SURCHARGE FA */
 
