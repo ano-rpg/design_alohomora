@@ -221,7 +221,7 @@ img[src="https://i.servimg.com/u/f23/20/37/66/52/locked10.gif"] {
 .pa_alo {
     display: grid;
     grid-template-columns: 1.1fr 0.7fr 1fr;
-    grid-template-rows: 70px 205px 150px;
+    grid-template-rows: 70px 205px auto;
     gap: 0 0;
     grid-auto-flow: row;
     grid-template-areas:
@@ -444,13 +444,13 @@ width:300px;
     background-color: var(--title-2-bg);
     overflow: auto;
     padding: 5px;
-    font-size: 12px;
+    font-size: 0.65vw;
     height: 241px;
 }
 
 .chrono span {
     display: block;
-    font-size: 11px;
+    font-size: 0.65vw;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--fow-bg);
@@ -474,6 +474,7 @@ font-weight:bold;
     background-color: var(--title-2-bg);
     margin-left: 5px;
     padding: 5px;
+    font-size: 0.79vw;
 }
 
 .annonces {
@@ -490,7 +491,7 @@ font-weight:bold;
 .annonce_full{
     background-color: var(--title-2-bg);
     padding: 5px;
-    font-size: 12px;
+    font-size: 0.65vw;
     height: 115px;
     margin-right: -5px;
     overflow:auto
@@ -498,7 +499,7 @@ font-weight:bold;
 
 .annonces span {
     display: block;
-    font-size: 11px;
+    font-size: 0.65vw;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--fow-bg);
@@ -1325,7 +1326,7 @@ body #i_logo {
 .cate {
     display: grid;
     grid-template-columns: 150px 1fr 50px 170px;
-    grid-template-rows: 35px 70px auto;
+    grid-template-rows: auto auto auto;
     gap: 0 0;
     grid-template-areas:
         "Forumname Forumname Forumname Forumname"
@@ -1345,7 +1346,7 @@ body #i_logo {
     margin: 0px 0px 5px 0px;
     padding-left: 5px;
     background-color: var(--title-2-bg);
-    font-size: 30px;
+    font-size: 1.3vw;
     transition:.75s;
 }
 
@@ -1366,8 +1367,8 @@ body #i_logo {
 
 .Liensub {
     grid-area: Liensub;
-    margin-top: 20px;
-    font-size: 11px;
+    align-self: center;
+    font-size: 0.5vw;
     color: #000!important;
     text-decoration: none!important;
     text-transform: lowercase;
@@ -1378,7 +1379,7 @@ body #i_logo {
 
 .Liensub a {
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 0.5vw;;
 }
 
 .descforum {
@@ -1427,7 +1428,7 @@ body #i_logo {
 .submess { 
     grid-area: submess;
     text-align: right;
-    font-size: 10px;
+    font-size: 0.5vw;
   align-self: end;
 }
 
@@ -1579,6 +1580,7 @@ font-size:18px;
     align-self: center;
     padding-left: 20px;
     text-align: center;
+    font-size:0.9vw;
 }
 
 .birthday {
