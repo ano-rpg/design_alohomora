@@ -1417,7 +1417,7 @@ body #i_logo {
 
 .avalast {
     grid-area: avalast;
-    height: 100px;
+    height: 80px;
     width: 50px;
     background-color: #fff;
     align-self: center;
@@ -1435,8 +1435,8 @@ body #i_logo {
   padding:0px!important
 }
 .lastpost-avatar img {
-width: auto;
-height: 100px;
+width: 50px;
+height: auto;
   border-radius:0px!important;
 }
 
