@@ -1346,7 +1346,7 @@ body #i_logo {
     margin: 0px 0px 5px 0px;
     padding-left: 5px;
     background-color: var(--title-2-bg);
-    font-size: 1.3vw;
+    font-size:25px;
     transition:.75s;
 }
 
