@@ -444,13 +444,13 @@ width:300px;
     background-color: var(--title-2-bg);
     overflow: auto;
     padding: 5px;
-    font-size: 0.65vw;
+    font-size:12px;
     height: 241px;
 }
 
 .chrono span {
     display: block;
-    font-size: 0.65vw;
+    font-size:12px;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--fow-bg);
@@ -491,7 +491,7 @@ font-weight:bold;
 .annonce_full{
     background-color: var(--title-2-bg);
     padding: 5px;
-    font-size: 0.65vw;
+    font-size: 12px;
     height: 115px;
     margin-right: -5px;
     overflow:auto
@@ -499,7 +499,7 @@ font-weight:bold;
 
 .annonces span {
     display: block;
-    font-size: 0.65vw;
+    font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--fow-bg);
