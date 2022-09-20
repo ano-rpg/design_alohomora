@@ -446,6 +446,7 @@ width:300px;
     padding: 5px;
     font-size:12px;
     height: 241px;
+    width:96%
 }
 
 .chrono span {
@@ -474,6 +475,7 @@ font-weight:bold;
     background-color: var(--title-2-bg);
     margin-left: 5px;
     padding: 5px;
+    width:94.5%
 }
 
 .annonces {
@@ -493,7 +495,8 @@ font-weight:bold;
     font-size: 12px;
     height: 115px;
     margin-right: -5px;
-    overflow:auto
+    overflow:auto;
+    width:99%
 }
 
 .annonces span {
