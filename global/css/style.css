@@ -1430,7 +1430,8 @@ body #i_logo {
 .submess { 
     grid-area: submess;
     text-align: right;
-    font-size: 0.5vw;
+    font-size: 10px;
+    width:100%;
   align-self: end;
 }
 
