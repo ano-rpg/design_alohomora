@@ -1401,7 +1401,6 @@ body #i_logo {
     grid-area: sousforums;
     overflow: auto;
     font-size: 0;
-    background: #aeb7bd85;
     align-self: center;
     height: auto;
 }
@@ -1412,7 +1411,8 @@ body #i_logo {
     padding: 4px;
     line-height: 2.3;
     transition: .75s;
-	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3)
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    background: #aeb7bd85
 }
 
 .sousforums a:hover {
