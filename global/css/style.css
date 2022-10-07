@@ -580,7 +580,7 @@ font-weight:bold;
 	--accent-hue: 200;
 	--accent-color: hsl(var(--accent-hue, 200), 50%, 30%);
 	
-	--fow-bg: #ede4c3;
+	--fow-bg: #ede4c3b0;
 	--fow-txt: rgb(142,142,142);
 	
 	--title-txt: lightgrey;
@@ -1335,7 +1335,8 @@ body #i_logo {
         "imgrep descforum avalast Liensub"
         "sousforums sousforums avalast submess";
     width: 98%;
-    background-color: #ede4c3;
+    background-color: #d4d0c299;
+    border: 1px solid #c2a68885;
     margin-top: 5px;
     min-height: 136px;
     padding: 5px;
@@ -1347,7 +1348,7 @@ body #i_logo {
     font-family: 'Ms Madi',cursive;
     margin: 0px 0px 5px 0px;
     padding-left: 5px;
-    background-color: var(--title-2-bg);
+    background-color: #6d858cdb;
     font-size:25px;
     transition:.75s;
 }
@@ -1400,6 +1401,7 @@ body #i_logo {
     grid-area: sousforums;
     overflow: auto;
     font-size: 0;
+    background: #aeb7bd85;
     align-self: center;
     height: auto;
 }
@@ -1410,6 +1412,7 @@ body #i_logo {
     padding: 4px;
     line-height: 2.3;
     transition: .75s;
+	box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.3)
 }
 
 .sousforums a:hover {
