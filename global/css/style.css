@@ -454,7 +454,7 @@ width:300px;
     font-size:12px;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--fow-bg);
+    color: #ffffff99;
     border-bottom: 1px solid rgb(237,228,195,0.7);
     margin-top: 10px;
 }
@@ -504,7 +504,7 @@ font-weight:bold;
     font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--fow-bg);
+    color: #ffffff99;
     border-bottom: 1px solid rgb(237,228,195,0.7);
     margin-top: 10px;
 }
