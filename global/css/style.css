@@ -1887,9 +1887,10 @@ a[href^="/profile?mode=email&u="] {
 .predef_top {display: flex;} .predef_top div:nth-of-type(2) {padding-left: 2px;width: 67%;}
 .predef_cadre h1 {background-image: linear-gradient(45deg,var(--accent-color),hsl(264 50% 30% / 0));text-align: center;font-size: 15px;padding: 2px;font-variant: small-caps;margin-top: 0px;}
 .predef_top span {background: var(--accent-color);color: #fff;margin: 8.7px;display: inline-block;vertical-align: top;width: 82px;padding: 2px 0;overflow: hidden;font-size: 9px;font-family: Arial;text-align: center;line-height: 12px;}
-.predef_mid {display: flex;} .predef_mid div:nth-of-type(1) {width: 50%!important} .predef_mid div:nth-of-type(2) {margin-left: 4px;width: 60%;}
+.predef_mid {display: flex;} .predef_mid div:nth-of-type(1) {width: 50%!important;height: 72px;overflow: auto;} .predef_mid div:nth-of-type(2) {margin-left: 4px;width: 60%;max-height: 72px;overflow: auto;}
 .predef_credit{font-style: italic;text-align: right;font-size: 9px;margin-top: -20px;} .Pr_relations img {float: left;margin-right: 10px;}
 .predef_sscat{text-align: justify;width: 96%;background-color: #ede4c3a8;margin: auto;padding: 5px;}
+.Pr_relations div {min-height: 50px;}
 
 /* FLECHES HAUT-BAS */
 .boutonhautbas {
