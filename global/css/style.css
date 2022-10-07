@@ -383,7 +383,7 @@ color:red;
         "liens chrono annonces date";
     padding: 5px;
     margin: -90px 1px 5px;
-    background-color: #ede4c3;
+    background-color: #d4d0c299;
 }
 
 .liens { 
@@ -580,7 +580,7 @@ font-weight:bold;
 	--accent-hue: 200;
 	--accent-color: hsl(var(--accent-hue, 200), 50%, 30%);
 	
-	--fow-bg: #ede4c3b0;
+	--fow-bg: #d4d0c299;
 	--fow-txt: rgb(142,142,142);
 	
 	--title-txt: lightgrey;
@@ -1477,7 +1477,7 @@ height: auto;
 
 .online {
     grid-area: online;
-    background-color: #ede4c3;
+    background-color: #d4d0c299;
     width: 465px;
     height: 170px;
     padding: 5px;
@@ -1487,7 +1487,7 @@ height: auto;
 	overflow: auto;
 }
 
-.wasconnected { grid-area: wasconnected; background-color: #ede4c3;
+.wasconnected { grid-area: wasconnected; background-color: #d4d0c299;
     padding: 5px;
     height: 170px;
     overflow: auto;
@@ -1528,7 +1528,7 @@ height: auto;
 
 .mess { grid-area: mess; display:inline-block; vertical-align:top;
 height:90px; width:90px; padding:5px;
-background:#ede4c3; /* MODIFIABLE */}
+background:#d4d0c299; /* MODIFIABLE */}
 
 .mess p{
 margin-top:10px; margin-left:10px;
@@ -1543,7 +1543,7 @@ font-size:18px;
 
 .nbmembers { grid-area: nbmembers; display:inline-block; vertical-align:top; margin-left:15px;
 height:90px; width:90px; padding:5px;
-background:#ede4c3; /* MODIFIABLE */}
+background:#d4d0c299; /* MODIFIABLE */}
 
 .nbmembers p{
 margin-top:10px; margin-left:10px;
@@ -1574,7 +1574,7 @@ font-size:18px;
     max-height: 70px;
     margin-left: 15px;
     margin-right: 10px;
-    border: 15px solid #ede4c3;
+    border: 15px solid #d4d0c299;
 }
 
 .avatarlastmember img{
@@ -1597,7 +1597,7 @@ font-size:18px;
     text-align: center;
     letter-spacing: 3px;
     height: 99px;
-    background: #ede4c3;
+    background: #d4d0c299;
     padding: 2px;
 }
 
