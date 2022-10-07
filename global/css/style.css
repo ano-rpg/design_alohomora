@@ -1314,11 +1314,11 @@ body #i_logo {
 }
 
 .titrecat { 
-    text-align: center;
-    width: 780px;
-    height: 90px;
-    padding: 2px;
+text-align: right;
+    padding: 2px 25px 2px 2px;
+    background: url(https://media.discordapp.net/attachments/954373191474757672/1027923106725122069/test_alo.gif);
     margin-top: 15px;
+    background-size: cover;
 }
 
 .titre-cadre {
