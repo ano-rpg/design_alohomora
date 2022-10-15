@@ -370,6 +370,10 @@ color:red;
   color:black;
 }
 
+#content-container {
+    background-color: #e5e3da7d;
+}
+
 /***********************AFFICHAGE*****************************/
 
 .affichage {
@@ -577,8 +581,7 @@ font-weight:bold;
 /* VARIABLES - GLOBALES */
 
 :root {
-	--accent-hue: 200;
-	--accent-color: hsl(var(--accent-hue, 200), 50%, 30%);
+	--accent-color: #2e4a50;
 	
 	--fow-bg: #d4d0c299;
 	--fow-txt: rgb(142,142,142);
@@ -1335,8 +1338,8 @@ text-align: right;
         "imgrep descforum avalast Liensub"
         "sousforums sousforums avalast submess";
     width: 98%;
-    background-color: #d4d0c299;
-    border: 1px solid #c2a68885;
+    background-color: #e5e3da;
+    border: 1px solid #c4c9c5c9;
     margin-top: 5px;
     min-height: 136px;
     padding: 5px;
